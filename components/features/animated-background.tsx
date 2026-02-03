@@ -18,10 +18,15 @@ export function AnimatedBackground() {
     const darkBlue = "#002d63"
     const cyan = "#02e0ff"
 
+    // const blobs = [
+    //   { x: 0.3, y: 0.3, radius: 0.4, speedX: 0.0003, speedY: 0.0004, phase: 0 },
+    //   { x: 0.7, y: 0.6, radius: 0.35, speedX: -0.0004, speedY: 0.0003, phase: Math.PI / 2 },
+    //   { x: 0.5, y: 0.8, radius: 0.45, speedX: 0.0002, speedY: -0.0003, phase: Math.PI },
+    // ]
     const blobs = [
-      { x: 0.3, y: 0.3, radius: 0.4, speedX: 0.0003, speedY: 0.0004, phase: 0 },
-      { x: 0.7, y: 0.6, radius: 0.35, speedX: -0.0004, speedY: 0.0003, phase: Math.PI / 2 },
-      { x: 0.5, y: 0.8, radius: 0.45, speedX: 0.0002, speedY: -0.0003, phase: Math.PI },
+      { x: 0.15, y: 0.15, radius: 0.4, speedX: 0.0003, speedY: 0.0004, phase: 0 },
+      { x: 0.5, y: 0.9, radius: 0.35, speedX: -0.0004, speedY: 0.0003, phase: Math.PI / 2 },
+      { x: 0.9, y: 0.5, radius: 0.45, speedX: 0.0002, speedY: -0.0003, phase: Math.PI },
     ]
 
     const resize = () => {
