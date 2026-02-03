@@ -11,7 +11,7 @@ export default function LoginPage() {
         <LoginForm />
       </div>
 
-      <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden m-3 rounded-lg">
+      <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden m-3 rounded-xl">
         <AnimatedBackground />
         
         <div className="absolute inset-0 flex items-center justify-center px-8 z-10">
