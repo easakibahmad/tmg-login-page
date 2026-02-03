@@ -112,7 +112,7 @@ export function LoginForm() {
         <Button
           type="submit"
           onClick={handleButtonClick}
-          className="relative w-full lg:w-[388px] mt-6 font-bold uppercase font-sans h-12 bg-secondary shadow-gray-900/10 shadow-md hover:shadow-gray-900/20 hover:shadow-lg hover:bg-secondary text-white tracking-wider rounded-full cursor-pointer overflow-hidden focus:shadow-none focus:opacity-[0.85]" 
+          className="hover:shadow-xl relative w-full lg:w-[388px] mt-6 font-bold uppercase font-sans h-12 bg-secondary hover:bg-secondary text-white tracking-wider rounded-full cursor-pointer overflow-hidden focus:shadow-none focus:opacity-[0.85]" 
         >
           LOG IN
           {ripples.map((ripple) => (
