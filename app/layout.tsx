@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
+import { Toaster } from 'sonner'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -19,6 +20,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans antialiased ${inter.variable}`}>
         {children}
+        <Toaster 
+          position="top-right" 
+          toastOptions={{
+            classNames: {
+              error: '[&>svg]:text-[#E60000]',
+            },
+          }}
+        />
       </body>
     </html>
   )

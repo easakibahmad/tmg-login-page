@@ -206,3 +206,10 @@ textarea:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(0 45 99 / var(--tw-bg-opacity, 1));
 }
+
+/* Sonner toast error color customization */
+[data-sonner-toast][data-type="error"] {
+  color: #E60000 !important;
+  background-color: hsl(359, 100%, 97%) !important;
+  border-color: hsl(359, 100%, 94%) !important;
+}
