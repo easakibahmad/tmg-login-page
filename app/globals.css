@@ -1,5 +1,13 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-family: 'PP Neue Corp';
+  src: url('/fonts/ppNeueCorp.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -44,6 +52,7 @@
 
 @theme inline {
   --font-inter: var(--font-inter, 'Inter', sans-serif);
+  --font-pp-neue-corp: 'PP Neue Corp', sans-serif;
   --color-background: var(--background);
   --color-blue-gray-900: rgb(38 50 56);
   --color-blue-gray-700: rgb(69 90 100);
@@ -78,6 +87,10 @@
 
 .font-inter {
   font-family: var(--font-inter);
+}
+
+.font-pp-neue {
+  font-family: var(--font-pp-neue-corp), sans-serif;
 }
 
 .text-blue-gray-900 {

@@ -52,7 +52,7 @@ export function LoginForm() {
   return (
     <div className="w-full max-w-md mx-auto px-8">
       <div className="text-center mb-6 pb-10">
-        <h1 className="text-3xl font-medium text-blue-gray-900 tracking-normal antialiased">
+        <h1 className="text-3xl font-medium text-blue-gray-900 tracking-normal antialiased font-pp-neue">
           Welcome to TMG!
         </h1>
         <p className="text-base font-normal text-blue-gray-500 leading-8 font-inter antialiased">
