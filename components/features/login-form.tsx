@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Eye, EyeOff } from "lucide-react"
 import { toast } from "sonner"
+import Link from "next/link"
 
 export function LoginForm() {
   const [showPassword, setShowPassword] = useState(false)
@@ -136,9 +137,9 @@ export function LoginForm() {
       </form>
 
       <div className="mt-8 text-center space-y-3">
-        <button className="text-sm font-semibold leading-[150%] font-inter antialiased text-ellipsis text-gray-616161 cursor-pointer">
+        <Link href="/reset-password" className="text-sm font-semibold leading-[150%] font-inter antialiased text-ellipsis text-gray-616161 cursor-pointer">
           Forgot password
-        </button>
+        </Link>
         <div className="text-sm mt-3">
           <span className="antialiased text-blue-gray-500 font-sans mr-2">Not registered?</span>
           <button className="text-sm font-semibold leading-[150%] font-inter antialiased text-ellipsis text-gray-616161">
