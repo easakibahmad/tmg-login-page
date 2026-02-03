@@ -7,7 +7,7 @@ const TYPEWRITER_TEXTS = ["Erarbeite neue Geschäftsideen"]
 export default function LoginPage() {
   return (
     <main className="flex min-h-screen">
-      <div className="w-full lg:w-1/2 mt-14 lg:mt-0 flex lg:items-center lg:justify-center bg-background">
+      <div className="w-full lg:w-1/2 mt-18 lg:mt-0 flex lg:items-center lg:justify-center bg-background">
         <LoginForm />
       </div>
 
