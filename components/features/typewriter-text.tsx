@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 
 interface TypewriterTextProps {
   texts: string[]
+  prefix?: string
   typingSpeed?: number
   deletingSpeed?: number
   pauseDuration?: number
@@ -11,6 +12,7 @@ interface TypewriterTextProps {
 
 export function TypewriterText({
   texts,
+  prefix = "",
   typingSpeed = 100,
   deletingSpeed = 50,
   pauseDuration = 2000,
@@ -57,12 +59,13 @@ export function TypewriterText({
   }, [displayText, isTyping, currentIndex, texts, typingSpeed, deletingSpeed, pauseDuration])
 
   return (
-    <span className="inline-flex items-baseline">
-      <span className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">
+    <span className="inline-flex items-center">
+      <span className="text-[16px] text-black font-medium">
+        {prefix}
         {displayText}
       </span>
       <span
-        className={`inline-block w-[4px] h-[1.2em] bg-cyan-300 ml-1 rounded-sm shadow-[0_0_8px_rgba(34,211,238,0.8)] ${
+        className={`inline-block w-[2px] h-5 bg-blue-600 ml-1 rounded-sm ${
           showCursor ? "opacity-100" : "opacity-0"
         }`}
         style={{ 
