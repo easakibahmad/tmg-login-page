@@ -4,13 +4,7 @@ import { TypewriterText } from "@/components/features/typewriter-text"
 import { ArrowUp } from "lucide-react"
 
 const TYPEWRITER_TEXTS = [
-  "interactive prototypes.",
-  "dashboards.",
-  "your landing page.",
-  "your blog.",
-  "your portfolio.",
-  "your tools.",
-  "your saas startup."
+  "neue Geschäftsideen"
 ]
 
 export default function LoginPage() {
@@ -24,10 +18,10 @@ export default function LoginPage() {
         <AnimatedBackground />
         
         <div className="absolute inset-0 flex items-center justify-center px-8 z-10">
-          <div className="bg-[#FCFBF8D9] w-[450px] h-[72px] flex items-center justify-between rounded-lg p-4 shadow-xl">
+          <div className="bg-[#FCFBF8D9] w-[450px] h-[72px] flex items-center justify-between rounded-2xl p-4 shadow-xl">
             <TypewriterText
               texts={TYPEWRITER_TEXTS}
-              prefix="Ask Lovable to build "
+              prefix="Erarbeite "
               typingSpeed={80}
               deletingSpeed={40}
               pauseDuration={2000}
